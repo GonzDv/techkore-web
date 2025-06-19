@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/material-tailwind@3.0.0-beta.2/packages/dist/material-tailwind.min.js"
+    defer
+    ></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="border-b border-gray-100 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <div class="flex items-center space-x-4">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <span class="text-white font-bold text-sm">TK</span>
+                </div>
+                <span class="text-xl font-bold text-gray-900">TechKore</span>
+            </div>
+    
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#hero" class="text-gray-700 hover:text-blue-600 transition-colors">Inicio</a>
+                <a href="#servicios" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Servicios</a>
+                <a href="#beneficios" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Beneficios</a>
+                <a href="#contacto" class="text-gray-700 hover:text-blue-600 transition-colors duration-300">Contacto</a>
+            </nav>
+    
+            <button class="hidden md:block bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-200">
+                Consulta gratuita
+            </button>
+    
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <nav id="mobile-menu" class="hidden md:hidden bg-white py-4 px-6 border-t border-gray-100">
+            <ul class="flex flex-col space-y-4">
+                <li><a href="#hero" class="block text-gray-800 hover:text-blue-600 transition-colors py-2">Inicio</a></li>
+                <li><a href="#servicios" class="block text-gray-800 hover:text-blue-600 transition-colors py-2">Servicios</a></li>
+                <li><a href="#beneficios" class="block text-gray-800 hover:text-blue-600 transition-colors py-2">Beneficios</a></li>
+                <li><a href="#contacto" class="block text-gray-800 hover:text-blue-600 transition-colors py-2">Contacto</a></li>
+                <li>
+                    <button class="w-full bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-200">
+                        Consulta gratuita
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Tu PC Siempre en Óptimas Condiciones</h2>
+            <p>Ofrecemos soluciones integrales para el cuidado, optimización y reparación de equipos de cómputo. ¡Deja tu PC en manos de expertos!</p>
+            <a href="#contacto" class="cta-button">¡Contáctanos Ahora!</a>
+            </section>
+
+        <section id="servicios">
+            <h2>Nuestros Servicios Integrales</h2>
+            <article>
+                <h3>Mantenimiento Preventivo y Correctivo</h3>
+                <p>Mantén tu equipo funcionando sin problemas con nuestro servicio de limpieza interna, optimización de software y solución de problemas.</p>
+                <ul>
+                    <li>Limpieza de hardware (polvo, ventiladores)</li>
+                    <li>Actualización de drivers y software</li>
+                    <li>Eliminación de virus y malware</li>
+                    <li>Optimización del sistema operativo</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Reparación de Hardware y Software</h3>
+                <p>Desde pantallas rotas hasta fallas en el sistema operativo, diagnosticamos y reparamos cualquier problema que tenga tu PC.</p>
+                <ul>
+                    <li>Reemplazo de componentes (RAM, disco duro, tarjeta gráfica)</li>
+                    <li>Solución de problemas de arranque</li>
+                    <li>Recuperación de datos</li>
+                    <li>Instalación y configuración de software</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Venta y Asesoría de Componentes</h3>
+                <p>Te ayudamos a elegir y adquirir los mejores componentes para mejorar el rendimiento de tu equipo o ensamblar uno nuevo.</p>
+                <ul>
+                    <li>Asesoría personalizada</li>
+                    <li>Venta de RAM, SSDs, tarjetas gráficas, etc.</li>
+                    <li>Ensamblaje de equipos a medida</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Soporte Técnico Remoto</h3>
+                <p>Solucionamos problemas de software y configuración sin necesidad de que traigas tu equipo a nuestro taller.</p>
+                <ul>
+                    <li>Asistencia técnica vía remoto</li>
+                    <li>Configuración de redes y dispositivos</li>
+                    <li>Capacitación en el uso de software</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Desarrollo de Software</h3>
+                <p>Ofrecemos servicios de desarrollo de software a medida para satisfacer las necesidades específicas de tu negocio.</p>
+                <ul>
+                    <li>Desarrollo de aplicaciones web</li>
+                    <li>Integración de sistemas</li>
+                    <li>Automatización de procesos empresariales</li>
+                </ul>
+            </article>
+            </section>
+
+        <section id="beneficios">
+            <h2>¿Por Qué Elegir Nuestros Servicios?</h2>
+            <div>
+                <h3>Expertos Calificados</h3>
+                <p>Contamos con técnicos certificados y con años de experiencia en el sector.</p>
+            </div>
+            <div>
+                <h3>Atención Rápida y Eficaz</h3>
+                <p>Diagnósticos precisos y soluciones ágiles para que no te quedes sin tu equipo.</p>
+            </div>
+            <div>
+                <h3>Precios Competitivos</h3>
+                <p>Servicios de alta calidad a tarifas justas y transparentes.</p>
+            </div>
+            </section>
+
+        <section id="contacto">
+            <h2>Contáctanos y Obtén una Cotización</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <label for="mensaje">Mensaje (Describe tu problema o necesidad):</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <address>
+                <p>Estamos ubicados en: [Tu Dirección Completa]</p>
+                <p>Teléfono: <a href="tel:+525512345678">[Tu Número de Teléfono]</a></p>
+                <p>Email: <a href="mailto:info@tudominio.com">info@tudominio.com</a></p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 [TechKore]. Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="/politica-privacidad">Política de Privacidad</a></li>
+            <li><a href="/terminos-servicio">Términos de Servicio</a></li>
+        </ul>
+        </footer>
+</body>
+</html>
